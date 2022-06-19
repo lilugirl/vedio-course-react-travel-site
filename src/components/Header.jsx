@@ -3,7 +3,7 @@ const Header=({open,setOpen})=>{
         <a href="/">
             <div className="logo">Travel</div>
         </a>
-        <div className="menu-logo" onClick={()=>{
+        <div className={open?"menu-logo active":"menu-logo"} onClick={()=>{
             setOpen(!open)
         }}></div>
     </header>)
